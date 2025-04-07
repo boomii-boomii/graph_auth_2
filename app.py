@@ -3,7 +3,7 @@ import sqlite3
 import os 
 from flask_bcrypt import Bcrypt  # ✅ Step 1: Import bcrypt
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 app.secret_key = os.urandom(24)
 bcrypt = Bcrypt(app)  # ✅ Step 2: Initialize bcrypt
 
