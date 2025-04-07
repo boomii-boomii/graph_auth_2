@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css') }}" />
+        <title>Log In</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    </head>
+    <body>
+        <main>
+            <form method="post" action="/login_validation">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="password" name="password" placeholder="Enter your password"><br>
+                <button type="submit" value="login">Login </button> 
+            </form>
+            <p> Don't have an  account? <br><a href="/register">Create account</a></p>
+        </main>
+
+    </body>
+</html>
